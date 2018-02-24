@@ -7,6 +7,7 @@ target 'AngelicChat' do
 
   # Pods for AngelicChat
  pod 'Parse'
+ 
   target 'AngelicChatTests' do
     inherit! :search_paths
     # Pods for testing

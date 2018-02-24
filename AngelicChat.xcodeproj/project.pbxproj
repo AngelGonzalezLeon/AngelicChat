@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4A7A38E42040E19D008FBB42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A38E32040E19D008FBB42 /* AppDelegate.swift */; };
-		4A7A38E62040E19D008FBB42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A38E52040E19D008FBB42 /* ViewController.swift */; };
+		4A7A38E62040E19D008FBB42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A38E52040E19D008FBB42 /* LoginViewController.swift */; };
 		4A7A38E92040E19D008FBB42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7A38E72040E19D008FBB42 /* Main.storyboard */; };
 		4A7A38EB2040E19D008FBB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7A38EA2040E19D008FBB42 /* Assets.xcassets */; };
 		4A7A38EE2040E19D008FBB42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7A38EC2040E19D008FBB42 /* LaunchScreen.storyboard */; };
 		4A7A38F92040E19E008FBB42 /* AngelicChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A38F82040E19E008FBB42 /* AngelicChatTests.swift */; };
 		4A7A39042040E19E008FBB42 /* AngelicChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A39032040E19E008FBB42 /* AngelicChatUITests.swift */; };
+		8C3DDD16DABFA5A6F483202C /* Pods_AngelicChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA1348A9FC8FA03BBAC5422 /* Pods_AngelicChatUITests.framework */; };
+		CBCBF8BE283A41A7D704A60E /* Pods_AngelicChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4682402289CD9FEFEC06C09 /* Pods_AngelicChatTests.framework */; };
+		E13C599836909AE0EBEF02F1 /* Pods_AngelicChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1230305F11A1BD1B2886B07E /* Pods_AngelicChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1230305F11A1BD1B2886B07E /* Pods_AngelicChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngelicChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		172C23CB963059C7C6C94614 /* Pods-AngelicChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelicChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AngelicChatTests/Pods-AngelicChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		2FFAA46DC9BE60AD250F27DA /* Pods-AngelicChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelicChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AngelicChatUITests/Pods-AngelicChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A7A38E02040E19D008FBB42 /* AngelicChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngelicChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7A38E32040E19D008FBB42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A7A38E52040E19D008FBB42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A7A38E52040E19D008FBB42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4A7A38E82040E19D008FBB42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A7A38EA2040E19D008FBB42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A7A38ED2040E19D008FBB42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		4A7A38FF2040E19E008FBB42 /* AngelicChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngelicChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7A39032040E19E008FBB42 /* AngelicChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngelicChatUITests.swift; sourceTree = "<group>"; };
 		4A7A39052040E19E008FBB42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C9869178694E1ADCEF669E1 /* Pods-AngelicChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelicChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelicChat/Pods-AngelicChat.debug.xcconfig"; sourceTree = "<group>"; };
+		965195AF3FCBADFB2CD3298B /* Pods-AngelicChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelicChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-AngelicChat/Pods-AngelicChat.release.xcconfig"; sourceTree = "<group>"; };
+		B1A0B7B3A7AA94C6FF2124B6 /* Pods-AngelicChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelicChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelicChatTests/Pods-AngelicChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBA1348A9FC8FA03BBAC5422 /* Pods_AngelicChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngelicChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4682402289CD9FEFEC06C09 /* Pods_AngelicChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AngelicChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED48953C2705F4402DB90AD6 /* Pods-AngelicChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelicChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelicChatUITests/Pods-AngelicChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13C599836909AE0EBEF02F1 /* Pods_AngelicChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCBF8BE283A41A7D704A60E /* Pods_AngelicChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3DDD16DABFA5A6F483202C /* Pods_AngelicChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DF3BBF35C12FA38A99FEBE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C9869178694E1ADCEF669E1 /* Pods-AngelicChat.debug.xcconfig */,
+				965195AF3FCBADFB2CD3298B /* Pods-AngelicChat.release.xcconfig */,
+				B1A0B7B3A7AA94C6FF2124B6 /* Pods-AngelicChatTests.debug.xcconfig */,
+				172C23CB963059C7C6C94614 /* Pods-AngelicChatTests.release.xcconfig */,
+				ED48953C2705F4402DB90AD6 /* Pods-AngelicChatUITests.debug.xcconfig */,
+				2FFAA46DC9BE60AD250F27DA /* Pods-AngelicChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4A7A38D72040E19D008FBB42 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				4A7A38F72040E19E008FBB42 /* AngelicChatTests */,
 				4A7A39022040E19E008FBB42 /* AngelicChatUITests */,
 				4A7A38E12040E19D008FBB42 /* Products */,
+				3DF3BBF35C12FA38A99FEBE5 /* Pods */,
+				E111EB17107030307ACE517D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				4A7A38E32040E19D008FBB42 /* AppDelegate.swift */,
-				4A7A38E52040E19D008FBB42 /* ViewController.swift */,
+				4A7A38E52040E19D008FBB42 /* LoginViewController.swift */,
 				4A7A38E72040E19D008FBB42 /* Main.storyboard */,
 				4A7A38EA2040E19D008FBB42 /* Assets.xcassets */,
 				4A7A38EC2040E19D008FBB42 /* LaunchScreen.storyboard */,
@@ -125,6 +155,16 @@
 			path = AngelicChatUITests;
 			sourceTree = "<group>";
 		};
+		E111EB17107030307ACE517D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1230305F11A1BD1B2886B07E /* Pods_AngelicChat.framework */,
+				C4682402289CD9FEFEC06C09 /* Pods_AngelicChatTests.framework */,
+				BBA1348A9FC8FA03BBAC5422 /* Pods_AngelicChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A7A39082040E19E008FBB42 /* Build configuration list for PBXNativeTarget "AngelicChat" */;
 			buildPhases = (
+				B2959F3B683818E183970A8E /* [CP] Check Pods Manifest.lock */,
 				4A7A38DC2040E19D008FBB42 /* Sources */,
 				4A7A38DD2040E19D008FBB42 /* Frameworks */,
 				4A7A38DE2040E19D008FBB42 /* Resources */,
+				D52910B76C958C732CC8BBAC /* [CP] Embed Pods Frameworks */,
+				06E2E28FFAECD91962CEE87E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A7A390B2040E19E008FBB42 /* Build configuration list for PBXNativeTarget "AngelicChatTests" */;
 			buildPhases = (
+				2E2D9F48E52BE5F7D1D29D84 /* [CP] Check Pods Manifest.lock */,
 				4A7A38F02040E19D008FBB42 /* Sources */,
 				4A7A38F12040E19D008FBB42 /* Frameworks */,
 				4A7A38F22040E19D008FBB42 /* Resources */,
+				E478AAD643E61091DEA95B64 /* [CP] Embed Pods Frameworks */,
+				F1E6A5A597BFFBBFAA371E8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A7A390E2040E19E008FBB42 /* Build configuration list for PBXNativeTarget "AngelicChatUITests" */;
 			buildPhases = (
+				9E8BA4E572E26F3F2EDABB78 /* [CP] Check Pods Manifest.lock */,
 				4A7A38FB2040E19E008FBB42 /* Sources */,
 				4A7A38FC2040E19E008FBB42 /* Frameworks */,
 				4A7A38FD2040E19E008FBB42 /* Resources */,
+				FEFBB03D482D5F9B1B719E69 /* [CP] Embed Pods Frameworks */,
+				91E6CF0029E06CFE08680AD5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +303,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06E2E28FFAECD91962CEE87E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngelicChat/Pods-AngelicChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E2D9F48E52BE5F7D1D29D84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AngelicChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91E6CF0029E06CFE08680AD5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngelicChatUITests/Pods-AngelicChatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8BA4E572E26F3F2EDABB78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AngelicChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2959F3B683818E183970A8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AngelicChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D52910B76C958C732CC8BBAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AngelicChat/Pods-AngelicChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngelicChat/Pods-AngelicChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E478AAD643E61091DEA95B64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngelicChatTests/Pods-AngelicChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E6A5A597BFFBBFAA371E8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngelicChatTests/Pods-AngelicChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEFBB03D482D5F9B1B719E69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AngelicChatUITests/Pods-AngelicChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A7A38DC2040E19D008FBB42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A7A38E62040E19D008FBB42 /* ViewController.swift in Sources */,
+				4A7A38E62040E19D008FBB42 /* LoginViewController.swift in Sources */,
 				4A7A38E42040E19D008FBB42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +625,7 @@
 		};
 		4A7A39092040E19E008FBB42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9869178694E1ADCEF669E1 /* Pods-AngelicChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +641,7 @@
 		};
 		4A7A390A2040E19E008FBB42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965195AF3FCBADFB2CD3298B /* Pods-AngelicChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +657,7 @@
 		};
 		4A7A390C2040E19E008FBB42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A0B7B3A7AA94C6FF2124B6 /* Pods-AngelicChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +675,7 @@
 		};
 		4A7A390D2040E19E008FBB42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172C23CB963059C7C6C94614 /* Pods-AngelicChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +693,7 @@
 		};
 		4A7A390F2040E19E008FBB42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED48953C2705F4402DB90AD6 /* Pods-AngelicChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +710,7 @@
 		};
 		4A7A39102040E19E008FBB42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FFAA46DC9BE60AD250F27DA /* Pods-AngelicChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
