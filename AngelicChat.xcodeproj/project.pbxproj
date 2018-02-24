@@ -14,6 +14,7 @@
 		4A7A38EE2040E19D008FBB42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7A38EC2040E19D008FBB42 /* LaunchScreen.storyboard */; };
 		4A7A38F92040E19E008FBB42 /* AngelicChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A38F82040E19E008FBB42 /* AngelicChatTests.swift */; };
 		4A7A39042040E19E008FBB42 /* AngelicChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A39032040E19E008FBB42 /* AngelicChatUITests.swift */; };
+		4AAB1141204116E70014373B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB1140204116E70014373B /* ChatViewController.swift */; };
 		8C3DDD16DABFA5A6F483202C /* Pods_AngelicChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA1348A9FC8FA03BBAC5422 /* Pods_AngelicChatUITests.framework */; };
 		CBCBF8BE283A41A7D704A60E /* Pods_AngelicChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4682402289CD9FEFEC06C09 /* Pods_AngelicChatTests.framework */; };
 		E13C599836909AE0EBEF02F1 /* Pods_AngelicChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1230305F11A1BD1B2886B07E /* Pods_AngelicChat.framework */; };
@@ -53,6 +54,7 @@
 		4A7A38FF2040E19E008FBB42 /* AngelicChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngelicChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7A39032040E19E008FBB42 /* AngelicChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngelicChatUITests.swift; sourceTree = "<group>"; };
 		4A7A39052040E19E008FBB42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AAB1140204116E70014373B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5C9869178694E1ADCEF669E1 /* Pods-AngelicChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelicChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelicChat/Pods-AngelicChat.debug.xcconfig"; sourceTree = "<group>"; };
 		965195AF3FCBADFB2CD3298B /* Pods-AngelicChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelicChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-AngelicChat/Pods-AngelicChat.release.xcconfig"; sourceTree = "<group>"; };
 		B1A0B7B3A7AA94C6FF2124B6 /* Pods-AngelicChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AngelicChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AngelicChatTests/Pods-AngelicChatTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				4A7A38EA2040E19D008FBB42 /* Assets.xcassets */,
 				4A7A38EC2040E19D008FBB42 /* LaunchScreen.storyboard */,
 				4A7A38EF2040E19D008FBB42 /* Info.plist */,
+				4AAB1140204116E70014373B /* ChatViewController.swift */,
 			);
 			path = AngelicChat;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A7A38E62040E19D008FBB42 /* LoginViewController.swift in Sources */,
+				4AAB1141204116E70014373B /* ChatViewController.swift in Sources */,
 				4A7A38E42040E19D008FBB42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
