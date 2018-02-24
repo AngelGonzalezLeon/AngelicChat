@@ -13,8 +13,10 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,12 +24,35 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func onSignIn(_ sender: Any) {
-        PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!){(
-            user, error) -> Void in
-            if user != nil {
-                print("logged in")
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        if(passwordField.text == "" || usernameField.text == ""){
+            let alertController = UIAlertController(title: "Fields Empty", message: "Username or Password is empty", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+                UIAlertAction in
+                NSLog("OK Pressed")
+            }
+            // Add the actions
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        else{
+            PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!){(
+                user, error) -> Void in
+                if user != nil {
+                    print("logged in")
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                }
+                else{
+                    let alertController = UIAlertController(title: "Wrong Credentials", message: "User not found", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+                        UIAlertAction in
+                        NSLog("Failed Login Ok Pressed")
+                    }
+                    // Add the actions
+                    alertController.addAction(okAction)
+                   self.present(alertController, animated: true, completion: nil)
+                }
             }
         }
     }
@@ -45,6 +70,14 @@ class LoginViewController: UIViewController {
             }
             else
             {
+                let alertController = UIAlertController(title: "Failed to make account", message: "Username taken", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+                    UIAlertAction in
+                    NSLog("Failed Sign Up Ok Pressed")
+                }
+                // Add the actions
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
                 let e = error! as NSError
                 print(e.localizedDescription as Any)
                 
