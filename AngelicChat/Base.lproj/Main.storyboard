@@ -83,22 +83,40 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" id="HPI-Fk-tUT" customClass="ChatCell" customModule="AngelicChat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="86" id="HPI-Fk-tUT" customClass="ChatCell" customModule="AngelicChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HPI-Fk-tUT" id="eKz-5Q-05t">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuZ-DK-MJB">
-                                                    <rect key="frame" x="15" y="0.0" width="332" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-kr-zHH">
+                                                    <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuZ-DK-MJB">
+                                                    <rect key="frame" x="8" y="37" width="359" height="40.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6B0-kr-zHH" firstAttribute="leading" secondItem="eKz-5Q-05t" secondAttribute="leading" constant="8" id="1b8-vc-c1V"/>
+                                                <constraint firstItem="6B0-kr-zHH" firstAttribute="top" secondItem="eKz-5Q-05t" secondAttribute="top" constant="8" id="92y-hj-OWu"/>
+                                                <constraint firstAttribute="trailing" secondItem="fuZ-DK-MJB" secondAttribute="trailing" constant="8" id="BIW-1T-0oe"/>
+                                                <constraint firstItem="fuZ-DK-MJB" firstAttribute="top" secondItem="6B0-kr-zHH" secondAttribute="bottom" constant="8" id="K69-mz-UQw"/>
+                                                <constraint firstItem="fuZ-DK-MJB" firstAttribute="leading" secondItem="eKz-5Q-05t" secondAttribute="leading" constant="8" id="Prs-cz-cof"/>
+                                                <constraint firstAttribute="trailing" secondItem="6B0-kr-zHH" secondAttribute="trailing" constant="8" id="ndF-tb-AlI"/>
+                                                <constraint firstAttribute="bottom" secondItem="fuZ-DK-MJB" secondAttribute="bottom" constant="8" id="xiT-QJ-xJC"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="fuZ-DK-MJB" id="bbk-O6-kPR"/>
+                                            <outlet property="userNameLabel" destination="6B0-kr-zHH" id="Waa-rA-Avn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
