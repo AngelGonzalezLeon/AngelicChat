@@ -48,11 +48,17 @@
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mA0-Hn-jLJ"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CIL-Ht-cUB">
+                                <rect key="frame" x="177" y="304" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loadingActivityIndicator" destination="CIL-Ht-cUB" id="cVK-P5-cF6"/>
                         <outlet property="passwordField" destination="SDi-gv-bsC" id="JSN-am-2bQ"/>
                         <outlet property="usernameField" destination="NGJ-FB-LFE" id="adJ-Lx-CIn"/>
                         <segue destination="51X-5w-r8Z" kind="presentation" identifier="loginSegue" id="Ctu-SI-aZ6"/>
@@ -62,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="-314" y="27"/>
         </scene>
-        <!--chat-->
+        <!--ChatViewController-->
         <scene sceneID="wuP-cL-3jn">
             <objects>
-                <viewController id="yUP-kA-pZJ" customClass="ChatViewController" customModule="AngelicChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" title="ChatViewController" id="yUP-kA-pZJ" customClass="ChatViewController" customModule="AngelicChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vqs-Dp-Mrv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,39 +88,68 @@
                                 <rect key="frame" x="0.0" y="114" width="375" height="553"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="mNz-c6-LNd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="color" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </activityIndicatorView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="86" id="HPI-Fk-tUT" customClass="ChatCell" customModule="AngelicChat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="86"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="141" id="HPI-Fk-tUT" customClass="ChatCell" customModule="AngelicChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="48" width="375" height="141"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HPI-Fk-tUT" id="eKz-5Q-05t">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-kr-zHH">
-                                                    <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                                    <rect key="frame" x="72" y="8" width="295" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuZ-DK-MJB">
-                                                    <rect key="frame" x="8" y="37" width="359" height="40.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uAR-13-GFA">
+                                                    <rect key="frame" x="8" y="8" width="56" height="49"/>
+                                                    <color key="backgroundColor" red="0.20524197428478169" green="0.71018917248883251" blue="0.22898512999075746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="56" id="fnW-jn-bFb"/>
+                                                        <constraint firstAttribute="height" constant="49" id="k0f-Vx-aWu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crA-na-RZH">
+                                                    <rect key="frame" x="8" y="65" width="58" height="67.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuZ-DK-MJB">
+                                                            <rect key="frame" x="8" y="8" width="42" height="51.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.00013653545689720851" green="0.71018917248883251" blue="0.4077071612772003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="fuZ-DK-MJB" secondAttribute="bottom" constant="8" id="6rS-Vo-CIb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="fuZ-DK-MJB" secondAttribute="trailing" constant="8" id="Dct-B2-NhJ"/>
+                                                        <constraint firstItem="fuZ-DK-MJB" firstAttribute="leading" secondItem="crA-na-RZH" secondAttribute="leading" constant="8" id="pVW-n1-pVI"/>
+                                                        <constraint firstItem="fuZ-DK-MJB" firstAttribute="top" secondItem="crA-na-RZH" secondAttribute="top" constant="8" id="waL-jq-aUy"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="6B0-kr-zHH" firstAttribute="leading" secondItem="eKz-5Q-05t" secondAttribute="leading" constant="8" id="1b8-vc-c1V"/>
+                                                <constraint firstItem="uAR-13-GFA" firstAttribute="top" secondItem="eKz-5Q-05t" secondAttribute="top" constant="8" id="50O-fI-sKG"/>
                                                 <constraint firstItem="6B0-kr-zHH" firstAttribute="top" secondItem="eKz-5Q-05t" secondAttribute="top" constant="8" id="92y-hj-OWu"/>
-                                                <constraint firstAttribute="trailing" secondItem="fuZ-DK-MJB" secondAttribute="trailing" constant="8" id="BIW-1T-0oe"/>
-                                                <constraint firstItem="fuZ-DK-MJB" firstAttribute="top" secondItem="6B0-kr-zHH" secondAttribute="bottom" constant="8" id="K69-mz-UQw"/>
-                                                <constraint firstItem="fuZ-DK-MJB" firstAttribute="leading" secondItem="eKz-5Q-05t" secondAttribute="leading" constant="8" id="Prs-cz-cof"/>
+                                                <constraint firstAttribute="bottom" secondItem="crA-na-RZH" secondAttribute="bottom" constant="8" id="IVW-vz-zo7"/>
+                                                <constraint firstItem="uAR-13-GFA" firstAttribute="leading" secondItem="eKz-5Q-05t" secondAttribute="leading" constant="8" id="Je5-5b-Tdz"/>
+                                                <constraint firstItem="6B0-kr-zHH" firstAttribute="leading" secondItem="uAR-13-GFA" secondAttribute="trailing" constant="8" id="NTD-UQ-hdz"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="crA-na-RZH" secondAttribute="trailing" constant="8" id="ZS1-29-5ym"/>
+                                                <constraint firstItem="crA-na-RZH" firstAttribute="top" secondItem="uAR-13-GFA" secondAttribute="bottom" constant="8" id="i7X-0Z-JuF"/>
+                                                <constraint firstItem="crA-na-RZH" firstAttribute="leading" secondItem="eKz-5Q-05t" secondAttribute="leading" constant="8" id="lHU-gW-sJj"/>
                                                 <constraint firstAttribute="trailing" secondItem="6B0-kr-zHH" secondAttribute="trailing" constant="8" id="ndF-tb-AlI"/>
-                                                <constraint firstAttribute="bottom" secondItem="fuZ-DK-MJB" secondAttribute="bottom" constant="8" id="xiT-QJ-xJC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="avatarImageView" destination="uAR-13-GFA" id="Hmx-PZ-OIN"/>
                                             <outlet property="messageLabel" destination="fuZ-DK-MJB" id="bbk-O6-kPR"/>
+                                            <outlet property="msgBubbleView" destination="crA-na-RZH" id="L5m-iO-OMH"/>
                                             <outlet property="userNameLabel" destination="6B0-kr-zHH" id="Waa-rA-Avn"/>
                                         </connections>
                                     </tableViewCell>
@@ -129,11 +164,13 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="ChatViewController"/>
                         <viewLayoutGuide key="safeArea" id="pqg-I7-AKl"/>
                     </view>
                     <navigationItem key="navigationItem" title="chat" id="Nwi-6Z-L3g"/>
                     <connections>
                         <outlet property="chatMessageField" destination="AJg-wG-493" id="rT7-cE-SHJ"/>
+                        <outlet property="loadingActivityIndicator" destination="mNz-c6-LNd" id="ebX-x3-nsu"/>
                         <outlet property="table" destination="QBq-MI-2xG" id="Kai-LV-T7w"/>
                     </connections>
                 </viewController>

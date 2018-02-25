@@ -112,6 +112,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		268E986E20434F040072138B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2605E2FE204284810099E9DC /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3DF3BBF35C12FA38A99FEBE5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,13 +159,13 @@
 			isa = PBXGroup;
 			children = (
 				4A7A38E32040E19D008FBB42 /* AppDelegate.swift */,
+				268E986E20434F040072138B /* Models */,
 				2605E2FC204275040099E9DC /* ViewControllers */,
 				2605E2FD204275D10099E9DC /* Views */,
 				4A7A38E72040E19D008FBB42 /* Main.storyboard */,
 				4A7A38EA2040E19D008FBB42 /* Assets.xcassets */,
 				4A7A38EC2040E19D008FBB42 /* LaunchScreen.storyboard */,
 				4A7A38EF2040E19D008FBB42 /* Info.plist */,
-				2605E2FE204284810099E9DC /* Message.swift */,
 			);
 			path = AngelicChat;
 			sourceTree = "<group>";
@@ -420,11 +428,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AngelicChat/Pods-AngelicChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);

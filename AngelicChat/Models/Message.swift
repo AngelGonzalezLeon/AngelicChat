@@ -13,6 +13,7 @@ class Message: PFObject, PFSubclassing {
 
     @NSManaged var text: String?
     @NSManaged var user: PFUser
+    @NSManaged var avatar: String?
     
     class func parseClassName() -> String {
         return "Message"
@@ -23,6 +24,7 @@ class Message: PFObject, PFSubclassing {
         let query = PFQuery(className: Message.parseClassName())
         query.includeKey("text")
         query.includeKey("user")
+        query.includeKey("avatarURL")
         query.addDescendingOrder("createdAt")
         
         return query
